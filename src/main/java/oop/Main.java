@@ -15,12 +15,20 @@ public class Main {
 
         Student hamza = new Student();
         //Student() is a constructor
+        Student zayn = new Student(1067, "Zayn Ali", 82.0f);
+        zayn.Greetings();
+        hamza.Greetings();
+
+        Student Ali = new Student(zayn);
+        Ali.name = Ali.name + " Shykh";
 
 
-        hamza.marks=88.4f;
-        hamza.name="Hamza";
-        hamza.rno= 1068;
-        System.out.println(hamza.name);
+
+
+
+        System.out.println(Ali.name);
+        System.out.println(hamza.rno);
+        System.out.println(Ali.marks);
 
 
     }
@@ -29,5 +37,24 @@ public class Main {
         int rno;
         String name;
         float marks;
+        Student(){
+            this(1007, "Jaffar", 70.0f);
+        }
+
+        Student(Student other){
+            this.name= other.name;
+            this.rno= other.rno;
+            this.marks= other.marks;
+        }
+
+        Student( int rno, String name,float marks){
+            this.rno=rno;
+            this.name=name;
+            this.marks= marks;
+        }
+
+        void Greetings(){
+            System.out.println("Hey "+this.name+", Welcome to the programming class!");
+        }
     }
 }
