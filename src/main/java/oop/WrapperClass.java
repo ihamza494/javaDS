@@ -8,9 +8,9 @@ public class WrapperClass {
         int b=20;
         //swap(a, b);
         //System.out.println(a+" "+b);
-        final A hamza = new A("Hamza Iqbal");
+        A hamza = new A("Hamza Iqbal");
         hamza.name="Muhammad Hamza Iqbal";
-        System.out.println(hamza.name+ " " + hamza.num);
+        System.out.println(hamza);
 
 
     }
@@ -19,12 +19,14 @@ public class WrapperClass {
     //final int CONSTANT = 9.8;
     //always initialize while declaring
 
-    static void swap(int a, int b){
-        int temp = a;
-        a=b;
-        b = temp;
-    }
-
+//    static void swap(int a, int b){
+//        int temp = a;
+//        a=b;
+//        b = temp;
+//    }
+public static void message() {
+    System.out.println("Welcome to Java programming classes!");
+}
     static class  A{
         final int num =10;
         String name;
@@ -34,3 +36,6 @@ public class WrapperClass {
     }
 
 }
+
+//Packages:
+//Packages are containers for classes

@@ -1,5 +1,7 @@
 package oop;
 
+import static oop.WrapperClass.message;
+
 public class Main {
     public static void main(String[] args) {
         //stores five roll nos
@@ -29,6 +31,7 @@ public class Main {
         System.out.println(Ali.name);
         System.out.println(hamza.rno);
         System.out.println(Ali.marks);
+        message();
 
 
     }
